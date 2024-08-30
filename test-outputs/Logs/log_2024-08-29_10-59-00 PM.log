@@ -1,0 +1,7 @@
+[INFO] 29-08-2024 22:59:01 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Aug 29 22:58:59 EEST 2024
+[INFO] 29-08-2024 22:59:06 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 29-08-2024 22:59:07 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 29-08-2024 22:59:07 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProduct has Started
+[INFO] 29-08-2024 22:59:07 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Aug 29 22:58:59 EEST 2024
+[INFO] 29-08-2024 22:59:10 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProduct has Passed Successfully
+[INFO] 29-08-2024 22:59:10 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Aug 29 22:58:59 EEST 2024
