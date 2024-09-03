@@ -1,0 +1,17 @@
+[INFO] 31-08-2024 13:53:49 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024
+[INFO] 31-08-2024 13:53:59 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 31-08-2024 13:54:06 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 31-08-2024 13:54:06 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProduct has Started
+[INFO] 31-08-2024 13:54:06 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024
+[INFO] 31-08-2024 13:54:12 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProduct has Passed Successfully
+[INFO] 31-08-2024 13:54:12 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024
+[INFO] 31-08-2024 13:54:14 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024
+[INFO] 31-08-2024 13:54:32 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 31-08-2024 13:54:34 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 31-08-2024 13:54:34 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProductRandom has Started
+[INFO] 31-08-2024 13:54:34 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024
+[INFO] 31-08-2024 13:54:34 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:78)] - the Random Item is 2
+[INFO] 31-08-2024 13:54:35 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:78)] - the Random Item is 4
+[INFO] 31-08-2024 13:54:35 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:78)] - the Random Item is 5
+[INFO] 31-08-2024 13:54:35 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProductRandom has Passed Successfully
+[INFO] 31-08-2024 13:54:35 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sat Aug 31 13:53:48 EEST 2024

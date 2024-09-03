@@ -7,14 +7,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class P02_HomePage {
 
     // list because i have so many element i want to click on with the same locator
     public static ArrayList<WebElement> products = new ArrayList<>();
     public static ArrayList<WebElement> selectedproducts = new ArrayList<>();
-    private final WebDriver driver;
+    static float TotalPrices = 0;
+    private static WebDriver driver;
     private final String numberofproductclass = "shopping_cart_link";
+    private final String noofselectedproducts = "(//button[text() = 'Remove']//preceding-sibling::div[@class = 'inventory_item_price'])";
+    private final String cardicon = "shopping_cart_link";
+    private final By noofselectedproductslocator = By.xpath(noofselectedproducts);
+    private final By cardiconlocator = By.className(cardicon);
     private final By numberofproduct = By.className(numberofproductclass);
     private final By removefromcardbutton = By.xpath("//button[text() = 'Remove']");
     private String addtocardclass = "//button[@class]";
@@ -57,6 +64,19 @@ public class P02_HomePage {
         }
     }
 
+    public P02_HomePage AddRandomProducttoCard(int upper, int noofproduct) {
+
+        Set<Integer> randomnumbers = Utility.GenerateUniqueRandomNumbers(upper, noofproduct);
+
+        for (Integer rand : randomnumbers) {
+            LogsUtility.LoggerInfo("the Random Item is " + rand);
+            By dynamicaddtocardbutton = By.xpath("(//button[@class])[" + rand + "]");
+            Utility.Clicking_OnElement(driver, dynamicaddtocardbutton);
+
+        }
+        return this;
+    }
+
     public Boolean ComparingNumberOfSelectedProductsWithCard() {
 
         try {
@@ -72,5 +92,48 @@ public class P02_HomePage {
 
         }
     }
+
+    public P03_CardPage ClickOnCardIcon() {
+
+        Utility.Clicking_OnElement(driver, cardiconlocator);
+        return new P03_CardPage(driver);
+
+    }
+
+    public boolean ComparingTheCurrentURLToExpected(String expectedURL) {
+
+        return driver.getCurrentUrl().equals(expectedURL);
+        //or
+//        try {
+//            Utility.GeneralWait(driver).until(ExpectedConditions.urlToBe(expectedURL));
+
+//        }catch (Exception e){
+//            e.printStackTrace();
+//            return false;
+//        }
+//        return true;
+        // or
+//        if (Utility.GeneralWait(driver).until(ExpectedConditions.urlToBe(expectedURL)))
+//        {
+//            return true;
+//        }else{
+//            return false;
+//        }
+
+    }
+
+    public String GetThePricesOfSelectedProductInHomePag() {
+
+        List<WebElement> selectedproductelements = Utility.FindingElementsArrayList(driver, noofselectedproductslocator);
+        By individualpricelocator;
+        for (int i = 1; i <= selectedproductelements.size(); i++) {
+
+            individualpricelocator = By.xpath("(//button[text() = 'Remove']//preceding-sibling::div[@class = 'inventory_item_price'])[" + i + "]");
+            TotalPrices += Float.parseFloat(Utility.GetText(driver, individualpricelocator).replace("$", ""));
+        }
+        LogsUtility.LoggerInfo("the prices in the Home page is " + TotalPrices);
+        return String.valueOf(TotalPrices);
+    }
+
 
 }

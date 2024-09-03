@@ -1,0 +1,8 @@
+[INFO] 30-08-2024 18:55:06 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:55:05 EEST 2024
+[INFO] 30-08-2024 18:55:13 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 30-08-2024 18:55:14 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 30-08-2024 18:55:15 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProductRandom has Started
+[INFO] 30-08-2024 18:55:15 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:55:05 EEST 2024
+[ERROR] 30-08-2024 18:55:15 [main] [Utilities.Utility.GenerateUniqueRandomNumbers(Utility.java:202)] - the Upper number is less than the number of the product
+[INFO] 30-08-2024 18:55:17 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)] - Test Case CheckTheNumberOfSelectedProductRandom has Failed
+[INFO] 30-08-2024 18:55:17 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:55:05 EEST 2024

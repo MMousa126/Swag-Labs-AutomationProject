@@ -1,0 +1,5 @@
+[INFO] 03-09-2024 16:39:57 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 03-09-2024 16:39:58 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 03-09-2024 16:39:59 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:79)] - the Random Item is 1
+[INFO] 03-09-2024 16:39:59 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:79)] - the Random Item is 2
+[INFO] 03-09-2024 16:39:59 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:79)] - the Random Item is 5

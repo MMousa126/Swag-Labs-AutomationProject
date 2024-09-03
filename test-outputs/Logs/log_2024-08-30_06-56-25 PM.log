@@ -1,0 +1,13 @@
+[INFO] 30-08-2024 18:56:25 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024
+[INFO] 30-08-2024 18:56:33 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProduct has Started
+[INFO] 30-08-2024 18:56:33 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024
+[ERROR] 30-08-2024 18:56:33 [main] [Utilities.Utility.TakingFullScreenShot(Utility.java:107)] - Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "js" is null
+[INFO] 30-08-2024 18:56:33 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)] - Test Case CheckTheNumberOfSelectedProduct has Failed
+[INFO] 30-08-2024 18:56:33 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024
+[INFO] 30-08-2024 18:56:33 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024
+[INFO] 30-08-2024 18:56:40 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 30-08-2024 18:56:42 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 30-08-2024 18:56:42 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProductRandom has Started
+[INFO] 30-08-2024 18:56:42 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024
+[INFO] 30-08-2024 18:56:43 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProductRandom has Passed Successfully
+[INFO] 30-08-2024 18:56:43 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Fri Aug 30 18:56:24 EEST 2024

@@ -3,6 +3,8 @@ package Utilities;
 import com.assertthat.selenium_shutterbug.core.Capture;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import io.qameta.allure.Allure;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,12 +12,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
 
 // this class concerns with any additional function that can helps me (General)
 public class Utility {
@@ -115,5 +118,108 @@ public class Utility {
         new Select(ByToWebElement(driver, locator)).selectByVisibleText(option);
     }
 
+    //TODO: Checking Broken Link and Broken Image Using HTTP Connection
+    /*
+     * @elements -> the elements that have link or image
+     * @Image or Link -> choose the type of checking
+     * This Function Throws 2 Exceptions MalformedURLException and URISyntaxException
+     * This Function Using HTTP Connection
+     * */
+    public static void CheckBrokenLinkAndImageUsingHTTPConnection(List<WebElement> elements, String typeofcheck) {
+        URL url = null;
+        String type = typeofcheck.toLowerCase();
+        String attribute = null;
+        HttpURLConnection httpURLConnection = null;
+        if (type.equals("image")) {
+            attribute = "src";
+        } else if (type.equals("link")) {
+            attribute = "href";
+        } else {
+            LogsUtility.LoggerError("Error Type.\n" +
+                    "The Types Image or Link");
+        }
+        for (WebElement element : elements) {
+            try {
+                url = new URI(element.getAttribute(attribute)).toURL();
+                httpURLConnection = (HttpURLConnection) url.openConnection();
+                LogsUtility.LoggerInfo(httpURLConnection.getResponseMessage() + " " + httpURLConnection.getResponseCode());
+            } catch (URISyntaxException | IOException e) {
+                LogsUtility.LoggerError("Exception");
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    //TODO: Checking Broken Link and Broken Image Using RestAssured
+    /*
+     * @elements -> the elements that have link or image
+     * @Image or Link -> choose the type of checking
+     * This Function Throws 2 Exceptions MalformedURLException and URISyntaxException
+     * This Function Using RestAssured
+     * */
+    public static void CheckBrokenLinkAndImageUsingRestAssured(List<WebElement> elements, String typeofcheck) {
+        List<URL> url = new ArrayList<>();
+        String type = typeofcheck.toLowerCase();
+        String attribute = null;
+        if (type.equals("image")) {
+            attribute = "src";
+        } else if (type.equals("link")) {
+            attribute = "href";
+        } else {
+            LogsUtility.LoggerError("Error Type.\n" +
+                    "The Types Image or Link");
+        }
+        for (WebElement element : elements) {
+            try {
+                url.add(new URI(element.getAttribute(attribute)).toURL());
+            } catch (MalformedURLException | URISyntaxException e) {
+                LogsUtility.LoggerError("Exception");
+                e.printStackTrace();
+            }
+        }
+        for (URL elementurl : url) {
+            Response response = RestAssured.given().get(elementurl);
+            LogsUtility.LoggerInfo(response.getStatusLine());
+        }
+    }
+
+    // why +1 because the locator start with 1 not like the arrays
+    // this function return random number between 1 and the upper number
+    private static int GenerateRandomNumber(int upper) {
+        return (new Random().nextInt(upper)) + 1;
+    }
+
+    // why set because set have only unique numbers
+    // this function could throw an infinite loop if upper is less than  noofproduct
+    // the upper should be more than the no of the products
+    public static Set<Integer> GenerateUniqueRandomNumbers(int upper, int noofproduct) {
+
+        Set<Integer> random = new HashSet<>();
+
+
+        if (upper <= noofproduct) {
+            LogsUtility.LoggerError("the Upper number is less than the number of the product");
+            throw new IllegalArgumentException("The number of products should be smaller than the upper bound.");
+        } else {
+            while (random.size() < noofproduct) {
+                random.add(GenerateRandomNumber(upper));
+            }
+            return random;
+
+        }
+    }
+
+    public static boolean VerifyCurrentURLToExpected(WebDriver driver, String expectedURL) {
+
+        try {
+            GeneralWait(driver).until(ExpectedConditions.urlToBe(expectedURL));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 
 }

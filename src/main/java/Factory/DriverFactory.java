@@ -6,27 +6,24 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
 
 /* This for parallel execution and thread local */
 public class DriverFactory {
 
     private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<WebDriver>();
 
-    public static void SetupThreadDriver(String browser){
+    public static void SetupThreadDriver(String browser) {
 
         String actualBrowser = browser.toLowerCase();
 
-        switch (actualBrowser)
-        {
-            case "chrome" :
+        switch (actualBrowser) {
+            case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
                 driverThreadLocal.set(new ChromeDriver(chromeOptions));
                 break;
-            case "edge" :
+            case "edge":
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("--start-maximized");
                 driverThreadLocal.set(new EdgeDriver(edgeOptions));
@@ -34,22 +31,26 @@ public class DriverFactory {
             case "safari":
                 driverThreadLocal.set(new SafariDriver());
             default:
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.addArguments("--start-maximized");
-                driverThreadLocal.set(new FirefoxDriver(firefoxOptions));
+//                FirefoxOptions firefoxOptions = new FirefoxOptions();
+//                firefoxOptions.addArguments("--width=1680");
+//                firefoxOptions.addArguments("--height=900");
+//                driverThreadLocal.set(new FirefoxDriver(firefoxOptions));
+                driverThreadLocal.set(new FirefoxDriver());
+                driverThreadLocal.get().manage().window().maximize();
 
         }
 
     }
 
-    public static WebDriver GetThreadDriver(){
+    public static WebDriver GetThreadDriver() {
         return driverThreadLocal.get();
     }
 
-    public static void RemoveThreadDriver(){
+    public static void RemoveThreadDriver() {
         driverThreadLocal.remove();
     }
-    public static void QuitThreadDriver(){
+
+    public static void QuitThreadDriver() {
 
         GetThreadDriver().quit();
         RemoveThreadDriver();

@@ -4,6 +4,7 @@ import Factory.DriverFactory;
 import Listeners.IInvokedMethodListeners;
 import Listeners.ITestResultListeners;
 import PageTesting.P01_LoginPage;
+import PageTesting.P02_HomePage;
 import Utilities.DataUtility;
 import Utilities.LogsUtility;
 import org.testng.annotations.AfterMethod;
@@ -15,9 +16,9 @@ import org.testng.asserts.SoftAssert;
 import static Factory.DriverFactory.GetThreadDriver;
 import static Factory.DriverFactory.SetupThreadDriver;
 
-
 @Listeners({IInvokedMethodListeners.class, ITestResultListeners.class})
-public class TC01_LoginPage {
+public class TC02_HomePageCheckCard {
+
 
     private final String Browser_FileName = "environment";
     private final String Browser_Key = "Browser";
@@ -26,13 +27,17 @@ public class TC01_LoginPage {
     private final String usernamefield = "username";
     private final String passwordfield = "password";
     private final String homepage = "Home_URL";
+    private final String cardpage = "Card_URL";
     /* Environment variables from properties */
     private final String BROWSER = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Browser_Key);
     private final String URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Base_URLKey);
     private final String HOME_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, homepage);
+    private final String Card_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, cardpage);
     /* This Attributes for sending the username and password field using json file */
     private final String USERNAME = DataUtility.GetJsonDataFromFile(DataJsonFileName, usernamefield);
     private final String PASSWORD = DataUtility.GetJsonDataFromFile(DataJsonFileName, passwordfield);
+
+
     private final SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod
@@ -54,17 +59,44 @@ public class TC01_LoginPage {
     }
 
 
-    @Test
-    public void ValidLogin() {
+    @Test(priority = 1)
+    public void CheckTheNumberOfSelectedProduct() {
 
         new P01_LoginPage(GetThreadDriver())
                 .EnterUserName(USERNAME)
                 .EnterPassword(PASSWORD)
-                .ClickOnLogin();
-        softAssert.assertTrue(new P01_LoginPage(GetThreadDriver()).AssertLoginTC(HOME_URL));
+                .ClickOnLogin()
+                .AddAllProductToCard();
+
+        softAssert.assertTrue(new P02_HomePage(GetThreadDriver()).ComparingNumberOfSelectedProductsWithCard());
         softAssert.assertAll();
+    }
 
+    @Test(priority = 2)
+    public void CheckTheNumberOfSelectedProductRandom() {
 
+        new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3);
+
+        softAssert.assertTrue(new P02_HomePage(GetThreadDriver()).ComparingNumberOfSelectedProductsWithCard());
+        softAssert.assertAll();
+    }
+
+    @Test(priority = 3)
+    public void CheckTheRedirectToCardPage() {
+
+        new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon();
+
+        softAssert.assertTrue(new P02_HomePage(GetThreadDriver()).ComparingTheCurrentURLToExpected(Card_URL));
+        softAssert.assertAll();
     }
 
     @AfterMethod
@@ -73,5 +105,4 @@ public class TC01_LoginPage {
         DriverFactory.QuitThreadDriver();
 
     }
-
 }

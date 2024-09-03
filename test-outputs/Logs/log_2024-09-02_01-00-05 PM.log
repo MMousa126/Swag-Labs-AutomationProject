@@ -1,0 +1,10 @@
+[INFO] 02-09-2024 13:00:05 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Mon Sep 02 13:00:04 EEST 2024
+[INFO] 02-09-2024 13:00:12 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 02-09-2024 13:00:14 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 02-09-2024 13:00:14 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheRedirectToCardPage has Started
+[INFO] 02-09-2024 13:00:14 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Mon Sep 02 13:00:04 EEST 2024
+[INFO] 02-09-2024 13:00:15 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:94)] - the Random Item is 3
+[INFO] 02-09-2024 13:00:15 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:94)] - the Random Item is 4
+[INFO] 02-09-2024 13:00:15 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:94)] - the Random Item is 5
+[INFO] 02-09-2024 13:00:16 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheRedirectToCardPage has Passed Successfully
+[INFO] 02-09-2024 13:00:16 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Mon Sep 02 13:00:04 EEST 2024

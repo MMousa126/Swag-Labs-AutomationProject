@@ -1,0 +1,7 @@
+[INFO] 03-09-2024 00:08:38 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 03-09-2024 00:08:40 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 03-09-2024 00:08:40 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:65)] - the Random Item is 1
+[INFO] 03-09-2024 00:08:41 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:65)] - the Random Item is 4
+[INFO] 03-09-2024 00:08:41 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:65)] - the Random Item is 5
+[INFO] 03-09-2024 00:08:41 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:66)] - the prices in the card page is 87.97
+[INFO] 03-09-2024 00:08:41 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the total price is 87.97

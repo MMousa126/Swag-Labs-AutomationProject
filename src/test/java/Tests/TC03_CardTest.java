@@ -5,9 +5,9 @@ import Listeners.IInvokedMethodListeners;
 import Listeners.ITestResultListeners;
 import PageTesting.P01_LoginPage;
 import PageTesting.P02_HomePage;
+import PageTesting.P03_CardPage;
 import Utilities.DataUtility;
 import Utilities.LogsUtility;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -18,8 +18,7 @@ import static Factory.DriverFactory.GetThreadDriver;
 import static Factory.DriverFactory.SetupThreadDriver;
 
 @Listeners({IInvokedMethodListeners.class, ITestResultListeners.class})
-public class TC02_HomePage {
-
+public class TC03_CardTest {
 
     private final String Browser_FileName = "environment";
     private final String Browser_Key = "Browser";
@@ -28,13 +27,17 @@ public class TC02_HomePage {
     private final String usernamefield = "username";
     private final String passwordfield = "password";
     private final String homepage = "Home_URL";
+    private final String cardpage = "Card_URL";
     /* Environment variables from properties */
     private final String BROWSER = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Browser_Key);
     private final String URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Base_URLKey);
     private final String HOME_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, homepage);
+    private final String Card_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, cardpage);
     /* This Attributes for sending the username and password field using json file */
     private final String USERNAME = DataUtility.GetJsonDataFromFile(DataJsonFileName, usernamefield);
     private final String PASSWORD = DataUtility.GetJsonDataFromFile(DataJsonFileName, passwordfield);
+
+
     private final SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod
@@ -56,19 +59,20 @@ public class TC02_HomePage {
     }
 
 
-    @Test
-    public void CheckTheNumberOfSelectedProduct() {
+    @Test(priority = 2)
+    public void PricesCalculation() {
 
-        new P01_LoginPage(GetThreadDriver())
+        String TotalPriceHomepage = new P01_LoginPage(GetThreadDriver())
                 .EnterUserName(USERNAME)
                 .EnterPassword(PASSWORD)
                 .ClickOnLogin()
-                .AddAllProductToCard();
+                .AddRandomProducttoCard(5, 3)
+                .GetThePricesOfSelectedProductInHomePag();
 
-        Assert.assertFalse(new P02_HomePage(GetThreadDriver())
-                .ComparingNumberOfSelectedProductsWithCard());
-
-
+        new P02_HomePage(GetThreadDriver())
+                .ClickOnCardIcon();
+        softAssert.assertTrue(new P03_CardPage(GetThreadDriver()).ComparingPrices(TotalPriceHomepage));
+        softAssert.assertAll();
     }
 
     @AfterMethod

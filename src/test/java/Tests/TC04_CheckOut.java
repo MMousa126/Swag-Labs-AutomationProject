@@ -4,8 +4,10 @@ import Factory.DriverFactory;
 import Listeners.IInvokedMethodListeners;
 import Listeners.ITestResultListeners;
 import PageTesting.P01_LoginPage;
+import PageTesting.P04_CheckoutStepOne;
 import Utilities.DataUtility;
 import Utilities.LogsUtility;
+import Utilities.Utility;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -17,7 +19,8 @@ import static Factory.DriverFactory.SetupThreadDriver;
 
 
 @Listeners({IInvokedMethodListeners.class, ITestResultListeners.class})
-public class TC01_LoginPage {
+public class TC04_CheckOut {
+
 
     private final String Browser_FileName = "environment";
     private final String Browser_Key = "Browser";
@@ -26,13 +29,30 @@ public class TC01_LoginPage {
     private final String usernamefield = "username";
     private final String passwordfield = "password";
     private final String homepage = "Home_URL";
+    private final String cardpage = "Card_URL";
+
+    private final String checkoutfile = "CheckOutData";
+    private final String firstname = "firstname";
+    private final String lastname = "lastname";
+    private final String postcode = "postcode";
     /* Environment variables from properties */
     private final String BROWSER = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Browser_Key);
     private final String URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, Base_URLKey);
     private final String HOME_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, homepage);
+    private final String Card_URL = DataUtility.GetPropertiesDataFromFile(Browser_FileName, cardpage);
     /* This Attributes for sending the username and password field using json file */
     private final String USERNAME = DataUtility.GetJsonDataFromFile(DataJsonFileName, usernamefield);
     private final String PASSWORD = DataUtility.GetJsonDataFromFile(DataJsonFileName, passwordfield);
+    private final String FirstName = DataUtility.GetJsonDataFromFile(checkoutfile, firstname);
+    private final String LastName = DataUtility.GetJsonDataFromFile(checkoutfile, lastname);
+    private final String PostCode = DataUtility.GetJsonDataFromFile(checkoutfile, postcode);
+
+
+    private final String checkoutone = "CheckOutStepOne_URL";
+    private final String checkouttwo = "CheckOutStepTwo_URL";
+    private final String CheckOutURLStepOne = DataUtility.GetPropertiesDataFromFile(Browser_FileName, checkoutone);
+    private final String CheckOutURLStepTwo = DataUtility.GetPropertiesDataFromFile(Browser_FileName, checkouttwo);
+
     private final SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod
@@ -54,17 +74,26 @@ public class TC01_LoginPage {
     }
 
 
-    @Test
-    public void ValidLogin() {
+    @Test(priority = 2)
+    public void CheckoutSteps() {
 
         new P01_LoginPage(GetThreadDriver())
                 .EnterUserName(USERNAME)
                 .EnterPassword(PASSWORD)
-                .ClickOnLogin();
-        softAssert.assertTrue(new P01_LoginPage(GetThreadDriver()).AssertLoginTC(HOME_URL));
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon()
+                .ClickOnCheckOutButton();
+        softAssert.assertTrue(Utility.VerifyCurrentURLToExpected(GetThreadDriver(), CheckOutURLStepOne));
+        new P04_CheckoutStepOne(GetThreadDriver())
+                .EnterFirstName(FirstName)
+                .EnterLastName(LastName)
+                .EnterPostCode(PostCode)
+                .ClickOnContinue();
+
+
+        softAssert.assertTrue(Utility.VerifyCurrentURLToExpected(GetThreadDriver(), CheckOutURLStepTwo));
         softAssert.assertAll();
-
-
     }
 
     @AfterMethod
@@ -73,5 +102,4 @@ public class TC01_LoginPage {
         DriverFactory.QuitThreadDriver();
 
     }
-
 }
