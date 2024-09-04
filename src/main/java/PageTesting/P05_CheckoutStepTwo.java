@@ -10,27 +10,20 @@ import java.util.List;
 
 public class P05_CheckoutStepTwo {
 
-    static float totalPrices = 0;
     private final String itemtotal = "[data-test = subtotal-label]";
     private final By totalitemscss = By.cssSelector(itemtotal);
-
     private final String tax = "[data-test = tax-label]";
     private final By taxcss = By.cssSelector(tax);
-
     private final String totalwithtax = "[data-test=total-label]";
     private final By totalwithtaxcss = By.cssSelector(totalwithtax);
-
     private final String finish = "finish";
     private final By finishbutton = By.id(finish);
-
     private final String cancel = "cancel";
     private final By cancelbutton = By.id(cancel);
-
     private final String paying_items = "(//div[@data-test='inventory-item-price'])";
     private final By paying_items_csslocator = By.xpath(paying_items);
-
-
     private final WebDriver driver;
+    float totalPrices = 0;
 
     public P05_CheckoutStepTwo(WebDriver driver) {
         this.driver = driver;
@@ -100,9 +93,9 @@ public class P05_CheckoutStepTwo {
     }
 
     public boolean CheckCalculationOfTaxes(float taxes) {
-        if (taxes == CalculateTaxes())
+        if (taxes == CalculateTaxes()) {
             return true;
-
+        }
         return false;
     }
 
