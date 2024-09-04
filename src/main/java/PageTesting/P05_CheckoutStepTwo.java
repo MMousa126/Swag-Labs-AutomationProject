@@ -99,5 +99,14 @@ public class P05_CheckoutStepTwo {
         return false;
     }
 
+    public P06_FinishingOrder ClickOnFinishButton() {
+        Utility.Clicking_OnElement(driver, finishbutton);
+        return new P06_FinishingOrder(driver);
+    }
+
+    public P02_HomePage ClickOnCancelButton() {
+        Utility.Clicking_OnElement(driver, cancelbutton);
+        return new P02_HomePage(driver);
+    }
 
 }

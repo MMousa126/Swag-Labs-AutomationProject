@@ -1,0 +1,10 @@
+[INFO] 05-09-2024 00:30:02 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:30:01 EEST 2024
+[INFO] 05-09-2024 00:30:09 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:30:10 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:30:10 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnContinueWithoutData has Started
+[INFO] 05-09-2024 00:30:10 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:30:01 EEST 2024
+[INFO] 05-09-2024 00:30:11 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 1
+[INFO] 05-09-2024 00:30:11 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 2
+[INFO] 05-09-2024 00:30:11 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 5
+[INFO] 05-09-2024 00:30:12 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnContinueWithoutData has Passed Successfully
+[INFO] 05-09-2024 00:30:12 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:30:01 EEST 2024

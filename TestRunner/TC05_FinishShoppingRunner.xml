@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Checking TC05_FinishShopping">
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListeners"/>
+        <listener class-name="Listeners.ITestResultListeners"/>
+    </listeners>
+    <test name="Finish Shopping Suit">
+        <classes>
+            <class name="Tests.TC05_FinishShopping">
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

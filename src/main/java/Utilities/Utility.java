@@ -222,4 +222,22 @@ public class Utility {
         return true;
     }
 
+    public static boolean ComparingTheCurrentURLToExpected(WebDriver driver, String expectedURL) {
+
+        return driver.getCurrentUrl().equals(expectedURL);
+    }
+
+    // for regression test for storing only one latest file from logs
+    public static File GetLatestFile(String folderpath) {
+        File folder = new File(folderpath);
+        File[] files = folder.listFiles();
+        assert files != null;
+        if (files.length == 0) {
+            return null;
+        }
+        Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+
+        return files[0];
+    }
+
 }

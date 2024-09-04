@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Checking TC03_CardTest">
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListeners"/>
+        <listener class-name="Listeners.ITestResultListeners"/>
+    </listeners>
+    <test name="Card Suit">
+        <classes>
+            <class name="Tests.TC03_CardTest">
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

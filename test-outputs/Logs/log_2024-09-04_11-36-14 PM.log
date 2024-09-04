@@ -1,0 +1,10 @@
+[INFO] 04-09-2024 23:36:14 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:36:13 EEST 2024
+[INFO] 04-09-2024 23:36:20 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 04-09-2024 23:36:21 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 04-09-2024 23:36:21 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnCancelButton has Started
+[INFO] 04-09-2024 23:36:22 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:36:13 EEST 2024
+[INFO] 04-09-2024 23:36:22 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:102)] - the Random Item is 1
+[INFO] 04-09-2024 23:36:22 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:102)] - the Random Item is 4
+[INFO] 04-09-2024 23:36:23 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:102)] - the Random Item is 5
+[INFO] 04-09-2024 23:36:24 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnCancelButton has Passed Successfully
+[INFO] 04-09-2024 23:36:24 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:36:13 EEST 2024

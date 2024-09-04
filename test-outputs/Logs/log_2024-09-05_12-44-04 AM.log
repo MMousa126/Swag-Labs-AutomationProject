@@ -1,0 +1,164 @@
+[INFO] 05-09-2024 00:44:05 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:12 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:44:13 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:44:14 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ValidLogin has Started
+[INFO] 05-09-2024 00:44:14 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:14 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ValidLogin has Passed Successfully
+[INFO] 05-09-2024 00:44:14 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:16 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:22 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:44:23 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:44:23 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProduct has Started
+[INFO] 05-09-2024 00:44:23 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:25 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProduct has Passed Successfully
+[INFO] 05-09-2024 00:44:25 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:27 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:34 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:44:36 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:44:36 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProductRandom has Started
+[INFO] 05-09-2024 00:44:36 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:38 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:82)] - the Random Item is 1
+[INFO] 05-09-2024 00:44:38 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:82)] - the Random Item is 4
+[INFO] 05-09-2024 00:44:38 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:82)] - the Random Item is 5
+[INFO] 05-09-2024 00:44:39 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProductRandom has Passed Successfully
+[INFO] 05-09-2024 00:44:39 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:40 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:45 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:44:46 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:44:46 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheRedirectToCardPage has Started
+[INFO] 05-09-2024 00:44:46 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:47 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:95)] - the Random Item is 1
+[INFO] 05-09-2024 00:44:47 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:95)] - the Random Item is 3
+[INFO] 05-09-2024 00:44:48 [main] [Tests.TC02_HomePageCheckCard.CheckTheRedirectToCardPage(TC02_HomePageCheckCard.java:95)] - the Random Item is 4
+[INFO] 05-09-2024 00:44:48 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheRedirectToCardPage has Passed Successfully
+[INFO] 05-09-2024 00:44:48 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:51 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:57 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:44:58 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:44:58 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case PricesCalculation has Started
+[INFO] 05-09-2024 00:44:58 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:44:59 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:69)] - the Random Item is 1
+[INFO] 05-09-2024 00:44:59 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:69)] - the Random Item is 3
+[INFO] 05-09-2024 00:44:59 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:69)] - the Random Item is 5
+[INFO] 05-09-2024 00:45:00 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:70)] - the prices in the Home page is 53.97
+[INFO] 05-09-2024 00:45:00 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case PricesCalculation has Passed Successfully
+[INFO] 05-09-2024 00:45:00 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:01 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:07 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:09 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:09 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnContinueButton has Started
+[INFO] 05-09-2024 00:45:09 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:09 [main] [Tests.TC03_CardTest.ClickOnContinueButton(TC03_CardTest.java:86)] - the Random Item is 2
+[INFO] 05-09-2024 00:45:09 [main] [Tests.TC03_CardTest.ClickOnContinueButton(TC03_CardTest.java:86)] - the Random Item is 3
+[INFO] 05-09-2024 00:45:10 [main] [Tests.TC03_CardTest.ClickOnContinueButton(TC03_CardTest.java:86)] - the Random Item is 4
+[INFO] 05-09-2024 00:45:10 [main] [Tests.TC03_CardTest.ClickOnContinueButton(TC03_CardTest.java:87)] - the prices in the Home page is 129.94
+[INFO] 05-09-2024 00:45:11 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnContinueButton has Passed Successfully
+[INFO] 05-09-2024 00:45:11 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:12 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:17 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:18 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:18 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckoutSteps has Started
+[INFO] 05-09-2024 00:45:18 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:19 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:85)] - the Random Item is 1
+[INFO] 05-09-2024 00:45:19 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:85)] - the Random Item is 2
+[INFO] 05-09-2024 00:45:19 [main] [Tests.TC04_CheckOut.CheckoutSteps(TC04_CheckOut.java:85)] - the Random Item is 4
+[INFO] 05-09-2024 00:45:20 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckoutSteps has Passed Successfully
+[INFO] 05-09-2024 00:45:20 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:21 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:27 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:28 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:28 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckoutSteps2 has Started
+[INFO] 05-09-2024 00:45:28 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:28 [main] [Tests.TC04_CheckOut.CheckoutSteps2(TC04_CheckOut.java:107)] - the Random Item is 1
+[INFO] 05-09-2024 00:45:29 [main] [Tests.TC04_CheckOut.CheckoutSteps2(TC04_CheckOut.java:107)] - the Random Item is 2
+[INFO] 05-09-2024 00:45:29 [main] [Tests.TC04_CheckOut.CheckoutSteps2(TC04_CheckOut.java:107)] - the Random Item is 5
+[INFO] 05-09-2024 00:45:30 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the price is 47.97
+[INFO] 05-09-2024 00:45:30 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckoutSteps2 has Passed Successfully
+[INFO] 05-09-2024 00:45:30 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:31 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:37 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:38 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:38 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnContinueWithoutData has Started
+[INFO] 05-09-2024 00:45:38 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:39 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 2
+[INFO] 05-09-2024 00:45:39 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 3
+[INFO] 05-09-2024 00:45:39 [main] [Tests.TC04_CheckOut.ClickOnContinueWithoutData(TC04_CheckOut.java:129)] - the Random Item is 4
+[INFO] 05-09-2024 00:45:40 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnContinueWithoutData has Passed Successfully
+[INFO] 05-09-2024 00:45:40 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:41 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:47 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:48 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:48 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnCancelButton has Started
+[INFO] 05-09-2024 00:45:48 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:49 [main] [Tests.TC04_CheckOut.ClickOnCancelButton(TC04_CheckOut.java:146)] - the Random Item is 2
+[INFO] 05-09-2024 00:45:49 [main] [Tests.TC04_CheckOut.ClickOnCancelButton(TC04_CheckOut.java:146)] - the Random Item is 3
+[INFO] 05-09-2024 00:45:49 [main] [Tests.TC04_CheckOut.ClickOnCancelButton(TC04_CheckOut.java:146)] - the Random Item is 4
+[INFO] 05-09-2024 00:45:50 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnCancelButton has Passed Successfully
+[INFO] 05-09-2024 00:45:50 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:51 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:57 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:45:58 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:45:58 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckingThePricesOfWebsiteToTheCollected has Started
+[INFO] 05-09-2024 00:45:58 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:45:58 [main] [Tests.TC05_FinishShopping.CheckingThePricesOfWebsiteToTheCollected(TC05_FinishShopping.java:79)] - the Random Item is 3
+[INFO] 05-09-2024 00:45:59 [main] [Tests.TC05_FinishShopping.CheckingThePricesOfWebsiteToTheCollected(TC05_FinishShopping.java:79)] - the Random Item is 4
+[INFO] 05-09-2024 00:45:59 [main] [Tests.TC05_FinishShopping.CheckingThePricesOfWebsiteToTheCollected(TC05_FinishShopping.java:79)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:00 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the price is 73.97
+[INFO] 05-09-2024 00:46:00 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckingThePricesOfWebsiteToTheCollected has Passed Successfully
+[INFO] 05-09-2024 00:46:00 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:01 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:07 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:46:08 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:46:08 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckingCalculationOfTaxesIsRight has Started
+[INFO] 05-09-2024 00:46:08 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:09 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTaxesIsRight(TC05_FinishShopping.java:101)] - the Random Item is 1
+[INFO] 05-09-2024 00:46:09 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTaxesIsRight(TC05_FinishShopping.java:101)] - the Random Item is 4
+[INFO] 05-09-2024 00:46:09 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTaxesIsRight(TC05_FinishShopping.java:101)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:10 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the taxes calculation is 7.04
+[INFO] 05-09-2024 00:46:11 [main] [PageTesting.P05_CheckoutStepTwo.CheckCalculationOfTaxes(P05_CheckoutStepTwo.java:96)] - the total in the function is 87.97
+[INFO] 05-09-2024 00:46:11 [main] [PageTesting.P05_CheckoutStepTwo.CheckCalculationOfTaxes(P05_CheckoutStepTwo.java:96)] - the calctax in the function is 7.0376
+[INFO] 05-09-2024 00:46:11 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckingCalculationOfTaxesIsRight has Passed Successfully
+[INFO] 05-09-2024 00:46:11 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:11 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:17 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:46:18 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:46:18 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckingCalculationOfTotalPriceIsRight has Started
+[INFO] 05-09-2024 00:46:18 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:19 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 1
+[INFO] 05-09-2024 00:46:19 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 4
+[INFO] 05-09-2024 00:46:19 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:21 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the taxes calculation is 95.01
+[INFO] 05-09-2024 00:46:21 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:134)] - the GetTheTotalPriceWithTax is 95.01
+[INFO] 05-09-2024 00:46:21 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:134)] - the CollectingTheTotalTaxesAndItems is 95.01
+[INFO] 05-09-2024 00:46:21 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckingCalculationOfTotalPriceIsRight has Passed Successfully
+[INFO] 05-09-2024 00:46:21 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:22 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:27 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:46:28 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:46:28 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case FinishingTheShopping has Started
+[INFO] 05-09-2024 00:46:28 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:29 [main] [Tests.TC06_FinishShoppingPage.FinishingTheShopping(TC06_FinishShoppingPage.java:81)] - the Random Item is 2
+[INFO] 05-09-2024 00:46:29 [main] [Tests.TC06_FinishShoppingPage.FinishingTheShopping(TC06_FinishShoppingPage.java:81)] - the Random Item is 3
+[INFO] 05-09-2024 00:46:29 [main] [Tests.TC06_FinishShoppingPage.FinishingTheShopping(TC06_FinishShoppingPage.java:81)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:31 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case FinishingTheShopping has Passed Successfully
+[INFO] 05-09-2024 00:46:31 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:32 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:37 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:46:38 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:46:38 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnReturnHome has Started
+[INFO] 05-09-2024 00:46:38 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:39 [main] [Tests.TC06_FinishShoppingPage.ClickOnReturnHome(TC06_FinishShoppingPage.java:102)] - the Random Item is 1
+[INFO] 05-09-2024 00:46:39 [main] [Tests.TC06_FinishShoppingPage.ClickOnReturnHome(TC06_FinishShoppingPage.java:102)] - the Random Item is 3
+[INFO] 05-09-2024 00:46:39 [main] [Tests.TC06_FinishShoppingPage.ClickOnReturnHome(TC06_FinishShoppingPage.java:102)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:41 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnReturnHome has Passed Successfully
+[INFO] 05-09-2024 00:46:41 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:42 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:48 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 05-09-2024 00:46:49 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 05-09-2024 00:46:49 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnCancelButton has Started
+[INFO] 05-09-2024 00:46:49 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024
+[INFO] 05-09-2024 00:46:49 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:124)] - the Random Item is 1
+[INFO] 05-09-2024 00:46:50 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:124)] - the Random Item is 2
+[INFO] 05-09-2024 00:46:50 [main] [Tests.TC06_FinishShoppingPage.ClickOnCancelButton(TC06_FinishShoppingPage.java:124)] - the Random Item is 5
+[INFO] 05-09-2024 00:46:51 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnCancelButton has Passed Successfully
+[INFO] 05-09-2024 00:46:51 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Thu Sep 05 00:44:03 EEST 2024

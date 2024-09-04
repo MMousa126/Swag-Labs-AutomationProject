@@ -1,0 +1,11 @@
+[INFO] 04-09-2024 23:42:41 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:42:39 EEST 2024
+[INFO] 04-09-2024 23:42:49 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 04-09-2024 23:42:51 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 04-09-2024 23:42:52 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case PricesCalculation has Started
+[INFO] 04-09-2024 23:42:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:42:39 EEST 2024
+[INFO] 04-09-2024 23:42:52 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:70)] - the Random Item is 1
+[INFO] 04-09-2024 23:42:53 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:70)] - the Random Item is 3
+[INFO] 04-09-2024 23:42:53 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:70)] - the Random Item is 4
+[INFO] 04-09-2024 23:42:53 [main] [Tests.TC03_CardTest.PricesCalculation(TC03_CardTest.java:71)] - the prices in the Home page is 95.97
+[INFO] 04-09-2024 23:42:54 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case PricesCalculation has Passed Successfully
+[INFO] 04-09-2024 23:42:54 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 23:42:39 EEST 2024

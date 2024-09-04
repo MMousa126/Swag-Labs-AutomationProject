@@ -135,6 +135,7 @@ public class TC05_FinishShopping {
         softAssert.assertAll();
     }
 
+
     @AfterMethod
     public void Quit() {
 

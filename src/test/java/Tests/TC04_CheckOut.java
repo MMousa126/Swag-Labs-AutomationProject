@@ -119,6 +119,40 @@ public class TC04_CheckOut {
         softAssert.assertAll();
     }
 
+    @Test(priority = 4)
+    public void ClickOnContinueWithoutData() {
+
+        new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon()
+                .ClickOnCheckOutButton()
+                .ClickOnContinue();
+
+
+        softAssert.assertFalse(Utility.ComparingTheCurrentURLToExpected(GetThreadDriver(), CheckOutURLStepTwo));
+        softAssert.assertAll();
+    }
+
+    @Test(priority = 5)
+    public void ClickOnCancelButton() {
+
+        new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon()
+                .ClickOnCheckOutButton()
+                .ClickOnCancel();
+
+
+        softAssert.assertTrue(Utility.VerifyCurrentURLToExpected(GetThreadDriver(), Card_URL));
+        softAssert.assertAll();
+    }
+
     @AfterMethod
     public void Quit() {
 

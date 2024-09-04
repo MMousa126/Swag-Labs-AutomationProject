@@ -14,6 +14,9 @@ public class P03_CardPage {
     private final String noofselectedproducts = "(//button[text() = 'Remove']//preceding-sibling::div[@class = 'inventory_item_price'])";
     private final By noofselectedproductslocator = By.xpath(noofselectedproducts);
     private final String checkbox = "checkout";
+    private final String continuebutton = "continue-shopping";
+    private final By continuebuttonid = By.id(continuebutton);
+
     private final By checkboxbuttonid = By.id(checkbox);
 
 
@@ -57,5 +60,11 @@ public class P03_CardPage {
         Utility.Clicking_OnElement(driver, checkboxbuttonid);
         return new P04_CheckoutStepOne(driver);
 
+    }
+
+    public P02_HomePage ClickOnContinueShopping() {
+
+        Utility.Clicking_OnElement(driver, continuebuttonid);
+        return new P02_HomePage(driver);
     }
 }
