@@ -1,0 +1,5 @@
+[INFO] 04-09-2024 19:04:24 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:04:23 EEST 2024
+[INFO] 04-09-2024 19:04:31 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckoutSteps2 has Started
+[INFO] 04-09-2024 19:04:31 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:04:23 EEST 2024
+[INFO] 04-09-2024 19:04:31 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)] - Test Case CheckoutSteps2 has Failed
+[INFO] 04-09-2024 19:04:31 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:04:23 EEST 2024

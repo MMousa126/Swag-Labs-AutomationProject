@@ -4,11 +4,9 @@ import Factory.DriverFactory;
 import Listeners.IInvokedMethodListeners;
 import Listeners.ITestResultListeners;
 import PageTesting.P01_LoginPage;
-import PageTesting.P04_CheckoutStepOne;
 import PageTesting.P05_CheckoutStepTwo;
 import Utilities.DataUtility;
 import Utilities.LogsUtility;
-import Utilities.Utility;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -18,11 +16,8 @@ import org.testng.asserts.SoftAssert;
 import static Factory.DriverFactory.GetThreadDriver;
 import static Factory.DriverFactory.SetupThreadDriver;
 
-
 @Listeners({IInvokedMethodListeners.class, ITestResultListeners.class})
-public class TC04_CheckOut {
-
-
+public class TC05_FinishShopping {
     private final String Browser_FileName = "environment";
     private final String Browser_Key = "Browser";
     private final String Base_URLKey = "Base_URL";
@@ -74,31 +69,8 @@ public class TC04_CheckOut {
 
     }
 
-
-    @Test(priority = 2)
-    public void CheckoutSteps() {
-
-        new P01_LoginPage(GetThreadDriver())
-                .EnterUserName(USERNAME)
-                .EnterPassword(PASSWORD)
-                .ClickOnLogin()
-                .AddRandomProducttoCard(5, 3)
-                .ClickOnCardIcon()
-                .ClickOnCheckOutButton();
-        softAssert.assertTrue(Utility.VerifyCurrentURLToExpected(GetThreadDriver(), CheckOutURLStepOne));
-        new P04_CheckoutStepOne(GetThreadDriver())
-                .EnterFirstName(FirstName)
-                .EnterLastName(LastName)
-                .EnterPostCode(PostCode)
-                .ClickOnContinue();
-
-
-        softAssert.assertTrue(Utility.VerifyCurrentURLToExpected(GetThreadDriver(), CheckOutURLStepTwo));
-        softAssert.assertAll();
-    }
-
-    @Test(priority = 3)
-    public void CheckoutSteps2() {
+    @Test(priority = 1)
+    public void CheckingThePricesOfWebsiteToTheCollected() {
 
         String price = new P01_LoginPage(GetThreadDriver())
                 .EnterUserName(USERNAME)
@@ -116,6 +88,50 @@ public class TC04_CheckOut {
         LogsUtility.LoggerInfo("the price is " + price);
 
         softAssert.assertTrue(new P05_CheckoutStepTwo(GetThreadDriver()).CompareItemPricesToWebPrices(price));
+        softAssert.assertAll();
+    }
+
+    @Test(priority = 2)
+    public void CheckingCalculationOfTaxesIsRight() {
+
+        float price = new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon()
+                .ClickOnCheckOutButton()
+                .EnterFirstName(FirstName)
+                .EnterLastName(LastName)
+                .EnterPostCode(PostCode)
+                .ClickOnContinue()
+                .GetTheTotalTax();
+
+        LogsUtility.LoggerInfo("the taxes calculation is " + price);
+
+        softAssert.assertTrue(new P05_CheckoutStepTwo(GetThreadDriver()).CheckCalculationOfTaxes(price));
+        softAssert.assertAll();
+    }
+
+    @Test(priority = 3)
+    public void CheckingCalculationOfTotalPriceIsRight() {
+
+        String price = new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin()
+                .AddRandomProducttoCard(5, 3)
+                .ClickOnCardIcon()
+                .ClickOnCheckOutButton()
+                .EnterFirstName(FirstName)
+                .EnterLastName(LastName)
+                .EnterPostCode(PostCode)
+                .ClickOnContinue()
+                .GetTheTotalPriceWithTax();
+
+        LogsUtility.LoggerInfo("the taxes calculation is " + price);
+
+        softAssert.assertTrue(new P05_CheckoutStepTwo(GetThreadDriver()).ComparingTheTotalToTheWebSite(price));
         softAssert.assertAll();
     }
 

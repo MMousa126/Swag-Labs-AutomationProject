@@ -1,0 +1,13 @@
+[INFO] 04-09-2024 19:53:58 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:53:57 EEST 2024
+[INFO] 04-09-2024 19:54:13 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 04-09-2024 19:54:15 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 04-09-2024 19:54:15 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckingCalculationOfTotalPriceIsRight has Started
+[INFO] 04-09-2024 19:54:15 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:53:57 EEST 2024
+[INFO] 04-09-2024 19:54:16 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 2
+[INFO] 04-09-2024 19:54:17 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 4
+[INFO] 04-09-2024 19:54:17 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:123)] - the Random Item is 5
+[INFO] 04-09-2024 19:54:18 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the taxes calculation is 73.41
+[INFO] 04-09-2024 19:54:18 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:134)] - the GetTheTotalPriceWithTax is 73.41
+[INFO] 04-09-2024 19:54:18 [main] [Tests.TC05_FinishShopping.CheckingCalculationOfTotalPriceIsRight(TC05_FinishShopping.java:134)] - the CollectingTheTotalTaxesAndItems is 73.41
+[INFO] 04-09-2024 19:54:18 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckingCalculationOfTotalPriceIsRight has Passed Successfully
+[INFO] 04-09-2024 19:54:18 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:53:57 EEST 2024

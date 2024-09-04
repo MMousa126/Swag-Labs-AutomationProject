@@ -1,0 +1,11 @@
+[INFO] 04-09-2024 19:29:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:29:50 EEST 2024
+[INFO] 04-09-2024 19:29:58 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 04-09-2024 19:29:59 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 04-09-2024 19:29:59 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case Checking has Started
+[INFO] 04-09-2024 19:29:59 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:29:50 EEST 2024
+[INFO] 04-09-2024 19:30:00 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 2
+[INFO] 04-09-2024 19:30:00 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 3
+[INFO] 04-09-2024 19:30:00 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 5
+[INFO] 04-09-2024 19:30:02 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the taxes calculation is 2.72
+[INFO] 04-09-2024 19:30:02 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case Checking has Passed Successfully
+[INFO] 04-09-2024 19:30:02 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:29:50 EEST 2024

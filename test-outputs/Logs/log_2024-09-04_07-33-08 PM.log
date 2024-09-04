@@ -1,0 +1,13 @@
+[INFO] 04-09-2024 19:33:08 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:33:07 EEST 2024
+[INFO] 04-09-2024 19:33:15 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 04-09-2024 19:33:16 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 04-09-2024 19:33:16 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case Checking has Started
+[INFO] 04-09-2024 19:33:16 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:33:07 EEST 2024
+[INFO] 04-09-2024 19:33:16 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 1
+[INFO] 04-09-2024 19:33:17 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 2
+[INFO] 04-09-2024 19:33:17 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:101)] - the Random Item is 3
+[INFO] 04-09-2024 19:33:18 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:108)] - the total in the function is 55.97
+[INFO] 04-09-2024 19:33:18 [main] [Tests.TC05_FinishShopping.Checking(TC05_FinishShopping.java:108)] - the calctax in the function is 4.4776
+[INFO] 04-09-2024 19:33:18 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - the taxes calculation is 4.48
+[INFO] 04-09-2024 19:33:18 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case Checking has Passed Successfully
+[INFO] 04-09-2024 19:33:18 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Wed Sep 04 19:33:07 EEST 2024
