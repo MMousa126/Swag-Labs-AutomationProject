@@ -7,11 +7,12 @@ import PageTesting.P01_LoginPage;
 import PageTesting.P02_HomePage;
 import Utilities.DataUtility;
 import Utilities.LogsUtility;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import Utilities.Utility;
+import org.openqa.selenium.Cookie;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
+
+import java.util.Set;
 
 import static Factory.DriverFactory.GetThreadDriver;
 import static Factory.DriverFactory.SetupThreadDriver;
@@ -36,13 +37,11 @@ public class TC02_HomePageCheckCard {
     /* This Attributes for sending the username and password field using json file */
     private final String USERNAME = DataUtility.GetJsonDataFromFile(DataJsonFileName, usernamefield);
     private final String PASSWORD = DataUtility.GetJsonDataFromFile(DataJsonFileName, passwordfield);
-
-
     private final SoftAssert softAssert = new SoftAssert();
+    Set<Cookie> cookies;
 
-    @BeforeMethod
-    public void SetUp() {
-
+    @BeforeClass
+    public void login() {
         try {
 
             SetupThreadDriver(BROWSER);
@@ -55,6 +54,33 @@ public class TC02_HomePageCheckCard {
 
             e.printStackTrace();
         }
+        new P01_LoginPage(GetThreadDriver())
+                .EnterUserName(USERNAME)
+                .EnterPassword(PASSWORD)
+                .ClickOnLogin();
+
+        cookies = Utility.GetAllCookies(GetThreadDriver());
+        DriverFactory.QuitThreadDriver();
+    }
+
+    @BeforeMethod
+    public void SetUp() {
+
+        try {
+
+            SetupThreadDriver(BROWSER);
+
+            LogsUtility.LoggerInfo("firefox is Opened Correctly");
+            GetThreadDriver().get(URL);
+            LogsUtility.LoggerInfo("Page is Redirected to the URL");
+            Utility.InjectCookies(GetThreadDriver(), cookies);
+            GetThreadDriver().get(HOME_URL);
+            GetThreadDriver().navigate().refresh();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
 
     }
 
@@ -62,11 +88,7 @@ public class TC02_HomePageCheckCard {
     @Test(priority = 1)
     public void CheckTheNumberOfSelectedProduct() {
 
-        new P01_LoginPage(GetThreadDriver())
-                .EnterUserName(USERNAME)
-                .EnterPassword(PASSWORD)
-                .ClickOnLogin()
-                .AddAllProductToCard();
+        new P02_HomePage(GetThreadDriver()).AddAllProductToCard();
 
         softAssert.assertTrue(new P02_HomePage(GetThreadDriver()).ComparingNumberOfSelectedProductsWithCard());
         softAssert.assertAll();
@@ -75,10 +97,7 @@ public class TC02_HomePageCheckCard {
     @Test(priority = 2)
     public void CheckTheNumberOfSelectedProductRandom() {
 
-        new P01_LoginPage(GetThreadDriver())
-                .EnterUserName(USERNAME)
-                .EnterPassword(PASSWORD)
-                .ClickOnLogin()
+        new P02_HomePage(GetThreadDriver())
                 .AddRandomProducttoCard(5, 3);
 
         softAssert.assertTrue(new P02_HomePage(GetThreadDriver()).ComparingNumberOfSelectedProductsWithCard());
@@ -88,10 +107,7 @@ public class TC02_HomePageCheckCard {
     @Test(priority = 3)
     public void CheckTheRedirectToCardPage() {
 
-        new P01_LoginPage(GetThreadDriver())
-                .EnterUserName(USERNAME)
-                .EnterPassword(PASSWORD)
-                .ClickOnLogin()
+        new P02_HomePage(GetThreadDriver())
                 .AddRandomProducttoCard(5, 3)
                 .ClickOnCardIcon();
 
@@ -104,5 +120,10 @@ public class TC02_HomePageCheckCard {
 
         DriverFactory.QuitThreadDriver();
 
+    }
+
+    @AfterClass
+    public void RemoveSetSession() {
+        cookies.clear();
     }
 }

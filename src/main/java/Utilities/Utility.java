@@ -240,4 +240,18 @@ public class Utility {
         return files[0];
     }
 
+    // we want to make a session for login instead of every time i have to login i will login inside before test
+    // so i don't need to login every time using cookies
+
+    /* Take all Cookies from The Website */
+    public static Set<Cookie> GetAllCookies(WebDriver driver) {
+        return driver.manage().getCookies();
+    }
+
+    /* Injecting all the cookies to the driver */
+    public static void InjectCookies(WebDriver driver, Set<Cookie> cookies) {
+        for (Cookie cookie : cookies) {
+            driver.manage().addCookie(cookie);
+        }
+    }
 }
