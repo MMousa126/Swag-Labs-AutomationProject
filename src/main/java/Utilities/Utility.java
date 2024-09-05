@@ -254,4 +254,20 @@ public class Utility {
             driver.manage().addCookie(cookie);
         }
     }
+
+
+    /* Like injecting Registration for the preconditions */
+    public static String InjectRequestUsingPostAPI(String postrequest_url,String bodytobeposted,String contantrequesttype,) {
+
+        return RestAssured
+                .given()
+                .contentType(contantrequesttype)
+                .body(bodytobeposted)
+                .when()
+                .post(postrequest_url)
+                .then()
+                .extract()
+                .body()
+                .asString();
+    }
 }
