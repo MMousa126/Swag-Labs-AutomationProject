@@ -1,0 +1,23 @@
+[INFO] 08-09-2024 21:38:21 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:29 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 08-09-2024 21:38:30 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 08-09-2024 21:38:33 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:40 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - firefox is Opened Correctly
+[INFO] 08-09-2024 21:38:41 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 08-09-2024 21:38:42 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProduct has Started
+[INFO] 08-09-2024 21:38:42 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:44 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case CheckTheNumberOfSelectedProduct has Passed Successfully
+[INFO] 08-09-2024 21:38:44 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:45 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:52 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheNumberOfSelectedProductRandom has Started
+[INFO] 08-09-2024 21:38:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:52 [main] [Tests.TC02_HomePageCheckCard.CheckTheNumberOfSelectedProductRandom(TC02_HomePageCheckCard.java:101)] - the Random Item is 1
+[INFO] 08-09-2024 21:38:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)] - Test Case CheckTheNumberOfSelectedProductRandom has Failed
+[INFO] 08-09-2024 21:38:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:52 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)] - Test Case Quit has Failed
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case CheckTheRedirectToCardPage has Started
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:106)] - Test Case CheckTheRedirectToCardPage has been Skipped
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024
+[INFO] 08-09-2024 21:38:53 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:38:20 EEST 2024

@@ -1,0 +1,6 @@
+[INFO] 08-09-2024 21:28:58 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 08-09-2024 21:28:59 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 08-09-2024 21:29:00 [main] [Tests.TC07_ThreeDashes.ClickOnContinueButton(TC07_ThreeDashes.java:81)] - the Random Item is 2
+[INFO] 08-09-2024 21:29:00 [main] [Tests.TC07_ThreeDashes.ClickOnContinueButton(TC07_ThreeDashes.java:81)] - the Random Item is 3
+[INFO] 08-09-2024 21:29:01 [main] [Tests.TC07_ThreeDashes.ClickOnContinueButton(TC07_ThreeDashes.java:81)] - the Random Item is 4
+[INFO] 08-09-2024 21:29:01 [main] [Tests.TC07_ThreeDashes.ClickOnContinueButton(TC07_ThreeDashes.java:82)] - the prices in the Home page is 75.97

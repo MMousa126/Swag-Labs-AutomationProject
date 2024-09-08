@@ -24,8 +24,15 @@ public class P02_HomePage {
     private final By cardiconlocator = By.className(cardicon);
     private final By numberofproduct = By.className(numberofproductclass);
     private final By removefromcardbutton = By.xpath("//button[text() = 'Remove']");
+    private final String threedash = "react-burger-menu-btn";
+    private final String aboutus = "[data-test = 'about-sidebar-link']";
+    private final String logout = "logout_sidebar_link";
+    private final By threedashid = By.id(threedash);
+    private final By logoutid = By.id(logout);
+    private final By aboutuscss = By.cssSelector(aboutus);
     private String addtocardclass = "//button[@class]";
     private final By addtocardbutton = By.xpath(addtocardclass);
+
 
     public P02_HomePage(WebDriver driver) {
 
@@ -135,5 +142,18 @@ public class P02_HomePage {
         return String.valueOf(TotalPrices);
     }
 
+    public P02_HomePage ThreeDashesPage() {
+
+        Utility.Clicking_OnElement(driver, threedashid);
+        return this;
+    }
+
+    public void ClickOnAboutUsPage() {
+        Utility.Clicking_OnElement(driver, aboutuscss);
+    }
+
+    public void LoggingOut() {
+        Utility.Clicking_OnElement(driver, logoutid);
+    }
 
 }

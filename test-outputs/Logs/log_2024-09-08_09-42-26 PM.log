@@ -1,0 +1,14 @@
+[INFO] 08-09-2024 21:42:26 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024
+[INFO] 08-09-2024 21:42:33 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 08-09-2024 21:42:34 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 08-09-2024 21:42:34 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case AboutUs has Started
+[INFO] 08-09-2024 21:42:34 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024
+[INFO] 08-09-2024 21:42:43 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case AboutUs has Passed Successfully
+[INFO] 08-09-2024 21:42:43 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024
+[INFO] 08-09-2024 21:42:47 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024
+[INFO] 08-09-2024 21:42:53 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 08-09-2024 21:42:55 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 08-09-2024 21:42:55 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ClickOnLogOut has Started
+[INFO] 08-09-2024 21:42:55 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024
+[INFO] 08-09-2024 21:42:56 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ClickOnLogOut has Passed Successfully
+[INFO] 08-09-2024 21:42:56 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Sun Sep 08 21:42:24 EEST 2024

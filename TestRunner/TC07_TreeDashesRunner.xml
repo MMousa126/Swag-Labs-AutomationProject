@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Checking TC07_ThreeDashes">
+    <listeners>
+        <listener class-name="Listeners.IInvokedMethodListeners"/>
+        <listener class-name="Listeners.ITestResultListeners"/>
+    </listeners>
+    <test name="Home Page Suit">
+        <classes>
+            <class name="Tests.TC07_ThreeDashes">
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
