@@ -25,11 +25,21 @@
         <aspectj.version>1.9.20.1</aspectj.version>
         <seleniumShutterBug>1.6</seleniumShutterBug>
         <restassuredversion>5.5.0</restassuredversion>
+
+        <!-- this for running using maven configuration -->
+        <TC00_RegressionRunner>TestRunner/TC00_RegressionRunner.xml</TC00_RegressionRunner>
+        <TC01_LogInPageRunner>TestRunner/TC01_LogInPageRunner.xml</TC01_LogInPageRunner>
+        <TC02_HomePageRunner>TestRunner/TC02_HomePageRunner.xml</TC02_HomePageRunner>
+        <TC03_CardTestRunner>TestRunner/TC03_CardTestRunner.xml</TC03_CardTestRunner>
+        <TC04_CheckOutRunner>TestRunner/TC04_CheckOutRunner.xml</TC04_CheckOutRunner>
+        <TC05_FinishShoppingRunner>TestRunner/TC05_FinishShoppingRunner.xml</TC05_FinishShoppingRunner>
+        <TC06_FinishShoppingPageRunner>TestRunner/TC06_FinishShoppingPageRunner.xml</TC06_FinishShoppingPageRunner>
+        <TC07_TreeDashesRunner>TestRunner/TC07_TreeDashesRunner.xml</TC07_TreeDashesRunner>
     </properties>
     <build>
         <directory>
             <!-- this is for changing the location of the target file to be in TestOutputs File -->
-            TestOutputs/target
+            test-outputs/target
         </directory>
         <plugins>
             <!-- Define the version of AspectJ -->
@@ -39,6 +49,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
+                            ${TC01_LogInPageRunner}
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
