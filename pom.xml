@@ -25,11 +25,7 @@
         <aspectj.version>1.9.20.1</aspectj.version>
         <seleniumShutterBug>1.6</seleniumShutterBug>
         <restassuredversion>5.5.0</restassuredversion>
-<<<<<<< HEAD
         <allureMaven>2.12.0</allureMaven>
-=======
-
->>>>>>> origin/main
         <!-- this for running using maven configuration -->
         <TC00_RegressionRunner>TestRunner/TC00_RegressionRunner.xml</TC00_RegressionRunner>
         <TC01_LogInPageRunner>TestRunner/TC01_LogInPageRunner.xml</TC01_LogInPageRunner>
@@ -42,14 +38,7 @@
     </properties>
 
     <build>
-<<<<<<< HEAD
         <directory>test-outputs/target</directory>
-=======
-        <directory>
-            <!-- this is for changing the location of the target file to be in TestOutputs File -->
-            test-outputs/target
-        </directory>
->>>>>>> origin/main
         <plugins>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
@@ -70,11 +59,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>
-                            ${TC01_LogInPageRunner}
-                        </suiteXmlFile>
-                    </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
