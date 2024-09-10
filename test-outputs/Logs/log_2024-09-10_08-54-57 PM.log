@@ -1,0 +1,7 @@
+[INFO] 10-09-2024 20:54:57 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Tue Sep 10 20:54:56 EEST 2024
+[INFO] 10-09-2024 20:55:02 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Edge is Opened Correctly
+[INFO] 10-09-2024 20:55:03 [main] [java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)] - Page is Redirected to the URL
+[INFO] 10-09-2024 20:55:03 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)] - Test Case ValidLogin has Started
+[INFO] 10-09-2024 20:55:03 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Tue Sep 10 20:54:56 EEST 2024
+[INFO] 10-09-2024 20:55:04 [main] [org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)] - Test Case ValidLogin has Passed Successfully
+[INFO] 10-09-2024 20:55:04 [main] [org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)] - Test Case Tue Sep 10 20:54:56 EEST 2024
